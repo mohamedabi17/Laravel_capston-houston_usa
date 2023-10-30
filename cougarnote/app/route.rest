@@ -1,0 +1,19 @@
+
+GET http://localhost:8000/create-note
+###
+
+# GET http://localhost:3000/portfolio_med/65110b243bf130fda2d7d387
+
+# GET http://localhost:3000/listingAndReviews/
+
+# POST  http://localhost:3000/portfolio_med
+# Content-Type: application/json
+
+# {   "images":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArYA…FAABAVCBsAQAAEAWk/wEbZhaPBhaEpQAAAABJRU5ErkJggg=="],
+#     "name":"e-commerce website",
+#     "organisation":"jkjfdslkjklfdsklfsdlk",
+#     "description": "implementation of a website"
+# }
+
+
+
