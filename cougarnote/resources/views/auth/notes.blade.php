@@ -1,10 +1,10 @@
 <x-guest-layout>
     @section('content')
-    <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-semibold mb-4">View The Notes</h1>
+    <div style="margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h1 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; color: #ff0000;">View The Notes</h1>
 
         @if ($errors->any())
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+        <div style="background-color: #ffcccc; border: 1px solid #ff0000; color: #ff0000; padding: 10px; border-radius: 8px;">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -14,21 +14,21 @@
         @endif
 
         @if (session('success'))
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+        <div style="background-color: #ccffcc; border: 1px solid #00ff00; color: #00ff00; padding: 10px; border-radius: 8px;">
             {{ session('success') }}
         </div>
         @endif
 
-        <div class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        <div style="font-size: 0.875rem; color: #333; margin-bottom: 10px;">
             {{ __('See And Edit Notes .') }}
         </div>
 
         @foreach ($notes as $note)
-        <div class="bg-white p-4 rounded shadow mb-4">
-            <h2 class="text-xl font-semibold mb-2">{{ $note->title }}</h2>
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 10px;">
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 10px;">{{ $note->title }}</h2>
             <p>{{ $note->body }}</p>
             <!-- Add form fields or links to modify the note here -->
-            <a href="{{ route('notes.edit', $note->id) }}" class="text-blue-500 hover:underline">Edit</a>
+            <a href="{{ route('notes.edit', $note->id) }}" style="color: #007bff; text-decoration: underline; margin-left: 10px;">Edit</a>
         </div>
         @endforeach
     </div>

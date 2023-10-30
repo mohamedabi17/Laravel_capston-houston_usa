@@ -2,7 +2,7 @@
     
     @section('content')
     <div class="container">
-        <h1>Create a New Note</h1>
+        <h1 class="mb-4 text-sm text-gray-600 dark:text-red-400">Create a New Note</h1>
 
         @if ($errors->any())
         <div class="alert alert-danger">

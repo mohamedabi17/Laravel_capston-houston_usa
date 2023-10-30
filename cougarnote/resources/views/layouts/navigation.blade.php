@@ -16,7 +16,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('note.create')" :active="request()->routeIs('dashboard')">
-                        {{ __('Note') }}
+                        {{ __('Add Note') }}
+                    </x-nav-link>
+                      <x-nav-link :href="route('notes.index')" :active="request()->routeIs('dashboard')">
+                        {{ __('Previw Notes') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -42,6 +45,10 @@
                         </x-dropdown-link>
                          <x-dropdown-link :href="route('note.create')">
                             {{ __('Create Note') }}
+                        </x-dropdown-link>
+                        
+                         <x-dropdown-link :href="route('notes.index')">
+                            {{ __('Previw Notes') }}
                         </x-dropdown-link>
                         
 
