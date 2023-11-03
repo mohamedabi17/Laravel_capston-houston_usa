@@ -1,4 +1,4 @@
-# hayat_laravel
+# Capstone_laravel
 # Notes Web Application
 
 The **Notes Web Application** is a PHP-based web platform designed to help users create, manage, and view their notes easily. This application provides a user-friendly interface for creating and editing notes, allowing users to keep track of important information, ideas, and more.
