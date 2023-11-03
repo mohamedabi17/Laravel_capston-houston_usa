@@ -12,7 +12,8 @@ The **Notes Web Application** is a PHP-based web platform designed to help users
 
 ## How te setup THe project
 ![396594335_7073597129345686_1364419699513654474_n](https://github.com/mohamedabi17/hayat_laravel/assets/89711322/f7585a88-8b3d-4120-b8d1-ada87d34a755)
-
+## the command to run  THe project
+php artisan serve 
 ## Technologies Used
 - **PHP:** The core of the application is built using PHP, a popular server-side scripting language.
 - **Laravel:** Laravel, a PHP web application framework, is used to streamline development and provide robust features.
